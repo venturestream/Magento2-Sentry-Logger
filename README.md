@@ -22,6 +22,10 @@ This extension will add the ability to log to [Sentry](https://github.com/getsen
 'raven_dns' => 'https://****@sentry.domain.com/8',
 ```
 
+## Changes 
+
+* Update to use newer sentry repository: sentry/sentry
+
 Forked from:
 
 ---
