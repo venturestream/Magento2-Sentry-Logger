@@ -3,15 +3,24 @@
     <type name="Magento\Framework\Logger\Monolog">
         <arguments>
             <argument name="handlers" xsi:type="array">
-                <item name="raven" xsi:type="object">Sebwite\Sentry\Raven\Handler</item>
+                <item name="raven" xsi:type="object">Venturestream\Sentry\Raven\Handler</item>
                 <item name="system" xsi:type="object">Magento\Framework\Logger\Handler\System</item>
             </argument>
         </arguments>
     </type>
     <type name="Sebwite\Sentry\Raven\Handler">
         <arguments>
-            <argument name="ravenClient" xsi:type="object">\Sebwite\Sentry\Raven\Client</argument>
+            <argument name="ravenClient" xsi:type="object">\Venturestream\Sentry\Raven\Client</argument>
             <argument name="level" xsi:type="string">300</argument>
+            <!--
+            const INFO = 200;
+            NOTICE = 250;
+            WARNING = 300;
+            ERROR = 400;
+            CRITICAL = 500;
+            ALERT = 550;
+            EMERGENCY = 600;
+            -->
         </arguments>
     </type>
 </config>

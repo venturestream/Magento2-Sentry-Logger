@@ -1,6 +1,6 @@
 {
-    "name": "sebwite/magento2-sentry",
-    "description": "Magento 2.0 Logger for Sentry",
+    "name": "venturestream/magento2-sentry",
+    "description": "Magento 2.1 Logger for Sentry",
     "type": "magento2-module",
     "version": "1.0.1",
     "license": [
@@ -10,10 +10,10 @@
     "require": {
         "php": "~5.5.0|~5.6.0|~7.0",
         "magento/magento-composer-installer": "*",
-        "raven/raven": "0.9.*"
+        "sentry/sentry": "^1.6"
     },
     "autoload": {
-        "psr-4": { "Sebwite\\Sentry\\": "" },
+        "psr-4": { "Venturestream\\Sentry\\": "" },
         "files": [ "registration.php" ]
     }
 }

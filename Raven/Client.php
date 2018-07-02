@@ -1,4 +1,5 @@
-<?php namespace Sebwite\Sentry\Raven;
+<?php 
+namespace Venturestream\Sentry\Raven;
 
 use Raven_Client;
 
@@ -26,7 +27,7 @@ class Client extends Raven_Client
             }
             else
             {
-                $env = include $root . '/../app/etc/env.php';;
+                $env = include $root . '/../app/etc/env.php';
             }
 
             $isDeveloper = array_key_exists('MAGE_MODE', $env) && $env[ 'MAGE_MODE' ] === 'developer';

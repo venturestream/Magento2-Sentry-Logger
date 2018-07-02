@@ -1,10 +1,16 @@
-<?php namespace Sebwite\Sentry\Raven;
+<?php 
+namespace Venturestream\Sentry\Raven;
 
 use Monolog\Handler\RavenHandler;
 use Monolog\Logger;
 
 class Handler extends RavenHandler
 {
+    /**
+     * @param \Venturestream\Sentry\Raven\ravenClient $ravenClient
+     * @param type $level
+     * @param type $bubble
+     */
     public function __construct($ravenClient, $level = Logger::DEBUG, $bubble = true)
     {
 
